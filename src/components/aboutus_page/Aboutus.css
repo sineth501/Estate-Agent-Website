@@ -1,0 +1,151 @@
+.about-us {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.about-us-container {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 2rem;
+  padding: 2rem 0;
+  padding-top: 100px;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-us-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2b10a4;
+  margin-bottom: 1rem;
+  text-align: left; 
+}
+
+.about-us-description,
+.about-us-mission {
+  font-size: 1.125rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: left; 
+}
+
+/* Image Container Styles */
+.aboutusimage1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutusimage1 img {
+  width: 100%; 
+  max-width: 600px; 
+  height: auto; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  width: 200%; 
+  background-color: #63a8bb4a;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-top: 2rem; /* Add space between About Us and Why Choose Us */
+}
+
+.why-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2b10a4;
+  margin-bottom: 2rem;
+}
+
+.why-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.why-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.why-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #02076a;
+  margin-bottom: 1rem;
+}
+
+.why-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-us-container {
+    grid-template-columns: 1fr; 
+    gap: 1.5rem;
+  }
+
+  .about-us-title {
+    text-align: center; 
+  }
+
+  .about-us-description,
+  .about-us-mission {
+    text-align: center;
+  }
+
+  .aboutusimage1 img {
+    max-width: 100%; 
+  }
+
+  .why-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-title {
+    font-size: 2rem; 
+  }
+
+  .about-us-description,
+  .about-us-mission {
+    font-size: 1rem; 
+  }
+
+  .why-title {
+    font-size: 1.8rem;
+  }
+
+  .why-card h3 {
+    font-size: 1.25rem; 
+  }
+
+  .why-card p {
+    font-size: 0.9rem; 
+  }
+}

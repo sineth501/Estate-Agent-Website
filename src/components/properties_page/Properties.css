@@ -1,0 +1,34 @@
+.card {
+    transition: transform 0.3s;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 0%;
+    background-color: rgba(0, 131, 151, 0.241);
+    width: 300px;  
+  }
+  .card:hover {
+    transform: scale(1.02); 
+  }
+  .btn-danger {
+    background-color: #004671b9 !important; 
+    color: white !important;            
+    border: none !important;           
+  }
+  
+  .btn-danger:hover {
+    background-color: #408db1ce !important; 
+  }
+  
+  .favorites-btn {
+    background-color: #ff1100 !important; 
+    color: white !important;            
+    border: none !important;
+  }
+  
+  .favorites-btn.active {
+    background-color: #ef7171ca !important;
+  }
+  
+  .favorites-btn:hover {
+    background-color: #ee413edc !important;
+  }
+  
